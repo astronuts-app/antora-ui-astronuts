@@ -83,7 +83,7 @@
 }
 
 .toc .toc-menu a.is-active {
-  border-left-color: #FF1460;
+  border-left-color: #ff1460;
   color: var(--doc-font-color);
 }
 
