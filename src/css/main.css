@@ -1,0 +1,103 @@
+@media screen and (max-width: 1023.5px) {
+  aside.toc.sidebar {
+    display: none;
+  }
+
+  main > .content {
+    overflow-x: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    flex: auto;
+    min-width: 0; /* min-width: 0 required for flexbox to constrain overflowing elements */
+  }
+
+  main > .content {
+    display: flex;
+  }
+
+  aside.toc.embedded {
+    display: none;
+  }
+
+  aside.toc.sidebar {
+    flex: 0 0 var(--toc-width);
+    flex-basis: var(--toc-width--widescreen);
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  aside.toc.sidebar {
+    flex-basis: var(--toc-width--widescreen);
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.main-body--wrapper,
+.container-fluid,
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+#springlogo,
+#springlogo-foot {
+  height: 48px;
+  max-width: 250px;
+}
+
+footer #social-icons {
+  flex-shrink: 0;
+  width: 160px;
+}
+
+footer #social-icons a {
+  height: 40px;
+}
+
+footer #social-icons svg {
+  width: 40px;
+  margin-left: 15px;
+}
+
+footer #social-icons a:hover svg .cls-1,
+footer #social-icons a:focus svg .cls-1 {
+  fill: var(--color-accent-3);
+}
+
+footer #spring-links a:hover {
+  color: #086dc3;
+  text-decoration: underline;
+}
+
+#youtube-icon .cls-1 {
+  fill: var(--social-icon-circle);
+}
+
+#youtube-icon .cls-2 {
+  fill: var(--social-icon-color);
+}
+
+#github-icon .cls-1 {
+  fill: var(--social-icon-circle);
+}
+
+#github-icon .cls-2 {
+  fill: var(--social-icon-color);
+  fill-rule: evenodd;
+}
+
+#twitter-icon .cls-1 {
+  fill: var(--social-icon-circle);
+}
+
+#twitter-icon .cls-2 {
+  fill: var(--social-icon-color);
+}

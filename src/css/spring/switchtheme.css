@@ -1,0 +1,51 @@
+#switch-theme label {
+  display: none;
+}
+
+#switch-theme {
+  display: block;
+  float: right;
+  margin: 13px 13px 0 0;
+}
+
+#switch-theme input {
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  width: 40px;
+  height: 22px;
+  filter: var(--layout-switchtheme-invert-filter);
+  background: no-repeat url("../img/octicons-16.svg#view-sun") 90% 50% / 16px 16px, no-repeat url("../img/octicons-16.svg#view-moon") 10% 50% / 16px 16px;
+  background-color: var(--layout-switchtheme-background-color);
+  border-radius: 25px;
+  outline: none;
+}
+
+#switch-theme input::before {
+  filter: var(--layout-switchtheme-invert-filter);
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background-color: var(--layout-switchtheme-button-color);
+  transition: transform 200ms;
+}
+
+#switch-theme:hover input::before {
+  background-color: var(--layout-switchtheme-button-hover-color);
+}
+
+#switch-theme input:checked::before {
+  transform: translateX(18px);
+}
+
+@media screen and (max-width: 1023.5px) {
+  #switch-theme {
+    margin: 0;
+    margin-right: 5px;
+    margin-top: -2px;
+  }
+}

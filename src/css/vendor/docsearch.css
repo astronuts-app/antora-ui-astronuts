@@ -1,0 +1,55 @@
+@import "https://cdn.jsdelivr.net/npm/@docsearch/css@3";
+
+.DocSearch-Button {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  height: 40px;
+  border: 0 none;
+  font-weight: normal;
+  line-height: 40px;
+  color: var(--body-font-color);
+  background: var(--body-background-color);
+  text-align: left;
+  padding-left: 35px;
+}
+
+.DocSearch-Button:focus {
+  outline: none !important;
+  border: 0 none;
+  box-shadow: none;
+  color: var(--body-font-color);
+  background: var(--body-background-color);
+}
+
+.DocSearch-Button:hover,
+.DocSearch-Button:active {
+  border: 0 none;
+  box-shadow: none;
+  color: var(--body-font-color);
+  background: var(--body-background-color);
+}
+
+.DocSearch-Button .DocSearch-Search-Icon {
+  color: var(--docsearch-muted-color);
+  width: 18px;
+  margin: 0 3px;
+}
+
+.DocSearch-Button:hover .DocSearch-Search-Icon {
+  color: var(--body-font-color);
+}
+
+.DocSearch-Button-Placeholder {
+  font-size: 14px;
+}
+
+.DocSearch-Button svg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  fill: var(--body-font-color);
+}
