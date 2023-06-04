@@ -1,7 +1,7 @@
 html.dark-theme {
   /* General */
   --font-weight: 300;
-  --body-background-color: #1b1f23;
+  --body-background-color: #091d36;
   --panel-background-color: #262a2d;
   --panel-background: #2c3135;
   --panel-group-background-color: #303741;
@@ -9,7 +9,7 @@ html.dark-theme {
   --color-accent-1: #272c33;
   --color-accent-1-invert: #d8d3cc;
   --color-accent-2: #2d333a;
-  --color-accent-3: #6db33f;
+  --color-accent-3: #ff1460;
   --body-font-color: #fff;
   --asciidoctor-heading-font-color: #fff;
   --body-font-light-color: #abacaf;
