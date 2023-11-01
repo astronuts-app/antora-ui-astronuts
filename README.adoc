@@ -1,4 +1,4 @@
-= Antora AstroNuts UI
+= Antora Astronuts UI
 // Settings:
 :experimental:
 :hide-uri-scheme:
